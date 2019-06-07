@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
 </head>
 <body>
 	<div class="main_wrap">
@@ -34,12 +35,12 @@
 					</div>
 				</div>
 				<div class="share_wrap">
-					<img src="./asset/images/share_border.png" usema="share_link" />
+					<img src="./asset/images/share_border.png" usemap="share_link" alt="친구들도 우리 함께 갑시다." />
 					<map name="share_link">
-						<area shape="rect" coords="" href="#" target="_blank">
-						<area shape="rect" coords="" href="#" target="_blank">
-						<area shape="rect" coords="" href="#" target="_blank">
-						<area shape="rect" coords="" href="#" target="_blank">
+						<area shape="rect" coords="118,77,207,149" href="#" target="_blank">
+						<area shape="rect" coords="262,77,351,149" href="#" target="_blank">
+						<area shape="rect" coords="398,77,487,149" href="#" target="_blank">
+						<area shape="rect" coords="542,77,641,149" href="#" target="_blank">
 					</map>
 				</div>
 				<img class="w100" src="./asset/images/money_bottom.png" alt="money_bottom"/ >
@@ -77,6 +78,8 @@
 		$("#close_btn").click(function(){
 			$(".event_wrap").removeClass('active');
 		});
+
+		$("img[usemap]").rwdImageMaps();
 	});
 	</script>
 </body>
