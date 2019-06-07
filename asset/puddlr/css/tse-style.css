@@ -1,0 +1,67 @@
+.tse-scrollbar {
+	width: 10px;
+}
+.tse-scrollbar .drag-handle {
+	right: 5px;
+	width: 5px;
+	background: #d9d9de;
+}
+.tse-scrollable:hover .tse-scrollbar .drag-handle,
+.tse-scrollbar .drag-handle.visible {
+	opacity: 1;
+}
+
+
+
+/* left menu */
+#sub_page_wrap #page_box #menu {
+	overflow: hidden;
+}
+#menu_cs_wrapper {
+	width: 190px;
+	height: calc(100vh - 252px);
+}
+.sub .menu_list {
+	overflow-y: visible;
+	height: auto;
+}
+@media all and (max-width:960px) {
+	#menu_cs_wrapper {
+		width: 100vw;
+		height: calc(100vh - 50px);
+	}
+}
+
+
+
+/* contents */
+#sub_page_wrap #page_box #contents {
+	overflow: hidden;
+	padding-right: 0;
+}
+#contents_cs_wrapper {
+	width: 100%;
+	height: 100vh;
+}
+@media all and (max-width:960px) {
+	.sub .active_menu {
+		overflow: visible;
+	}
+	#contents_cs_wrapper {
+		height: calc(100vh - 100px);
+		margin-top: 100px;
+	}
+	.no-tabs #contents_cs_wrapper {
+		height: calc(100vh - 50px);
+		margin-top: 50px;
+	}
+	#contents_cs_wrapper .contents_wrap {
+		margin-top: 0;
+	}
+	#sub_page_wrap.active_menu #page_box #contents_cs_wrapper .tse-scrollbar {
+		z-index: -1;
+	}
+	#sub_page_wrap.active_menu #page_box #contents_cs_wrapper .tse-scroll-content {
+		overflow: hidden;
+	}
+}
