@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	<title>카카오페이 사전과제</title>
 	<link type="text/css" href="./asset/css/reset.css" rel="stylesheet">
 	<link type="text/css" href="./asset/css/main.css" rel="stylesheet">
@@ -51,7 +51,7 @@
 					<img src="./asset/images/banner.png" alt="banner">
 				</div>
 				<div class="info_wrap">
-					<img src="./asset/images/info_img.png" alt="info" />
+					<img src="./asset/images/info_img.png" alt="info" alt="참여하기" />
 				</div>
 			</div>
 		</div>
@@ -67,7 +67,7 @@
 		<div class="bottom">
 			<img src="./asset/images/event_bg2.png" alt="송금 후, 즉시 당첨 확인 가능하며 1원 환불, 매일 10회 참여 가능,카톡 최신 버전에만 참여가능">
 		</div>
-		<a class="go_link" href="#"><img src="../kakaopay/asset/images/sub_btn.png" /></a>
+		<a class="go_link2" href="#"></a>
 	</div>
 
 	<script>
@@ -76,10 +76,12 @@
 			$(".event_wrap").addClass('active');
 			$(".event_wrap .top").addClass('slide_down');
 			$(".event_wrap .bottom").addClass('slide_up');
+			$(".main_wrap").addClass('none');
 		});
 
 		$("#close_btn").click(function(){
 			$(".event_wrap").removeClass('active');
+			$(".main_wrap").removeClass('none');
 		});
 
 		$("img[usemap]").rwdImageMaps();
