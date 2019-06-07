@@ -7,7 +7,7 @@ body{min-height:100vh;height:auto;font-size:10px;}
 .main_wrap .content{}
 .main_wrap .content .tit_wrap{position:relative;width:84.8%;margin:-30px auto 0;}
 .main_wrap .content .tit_wrap .neon_tit{width:100%;}
-.main_wrap .content .tit_wrap .flame{position:absolute;top:-23px;left:17px;width:21.333%;}
+.main_wrap .content .tit_wrap .flame{position:absolute;top:-28px;left:34px;width:21.333%;}
 .main_wrap .content .tit_wrap .neon_box{position:absolute;left:45px;bottom:50px;text-align:center;text-shadow:0px 0px 5px #77bd3e;opacity:0.8;font-size:47px;transform:rotate(-3deg);-ms-transform:rotate(-3deg);-webkit-transform:rotate(-3deg);}
 .main_wrap .content .tit_wrap .neon_box > span{letter-spacing:4.0px;font-size:47px;color:#77bd3e;font-family:"Roboto script=all rev=1", "Adobe Blank";font-weight:100;}
 .main_wrap .content .tit_wrap .neon_box > span > span{font-size:47px;font-family:"Roboto script=all rev=1", "Adobe Blank";font-weight:100;animation: neon linear infinite 2s;}
@@ -35,6 +35,26 @@ body{min-height:100vh;height:auto;font-size:10px;}
 .event_wrap .close_btn .close_icon{display:block;width:60px;height:60px;background:url('../images/close.png')no-repeat;-webkit-transform:scale(0.5);-moz-transform:scale(0.5);-o-transform:scale(0.5);transform:scale(0.5);}
 .go_link{position:fixed;bottom:0;width:100%;z-index:100;}
 .go_link img{width:100%;}
+
+@media screen and (min-width: 360px) {
+	.main_wrap .content .tit_wrap .flame{top:-31px;left:38px;}
+	.main_wrap .content .tit_wrap .neon_box{left:52px;bottom:56px;}
+	.main_wrap .content .tit_wrap .neon_box > span{font-size:53px;letter-spacing:4.0px;}
+	.main_wrap .content .tit_wrap .neon_box > span > span{font-size:53px;}
+}
+@media screen and (min-width: 375px) {
+	.main_wrap .content .tit_wrap .flame{top:-33px;left:41px;}
+	.main_wrap .content .tit_wrap .neon_box{left:53px;bottom:59px;}
+	.main_wrap .content .tit_wrap .neon_box > span{font-size:53px;letter-spacing:6.0px;}
+	.main_wrap .content .tit_wrap .neon_box > span > span{font-size:53px;}
+}
+@media screen and (min-width: 414px) {
+	.main_wrap .content .tit_wrap .flame{top:-36px;left:44px;}
+	.main_wrap .content .tit_wrap .neon_box{left:60px;bottom:64px;}
+	.main_wrap .content .tit_wrap .neon_box > span{font-size:59px;letter-spacing:6.0px;}
+	.main_wrap .content .tit_wrap .neon_box > span > span{font-size:59px;}
+}
+
 
 @-webkit-keyframes money-bounce {
 	0%,
