@@ -17,7 +17,9 @@ body{min-height:100vh;height:auto;font-size:10px;}
 .main_wrap .content .money_wrap .t_money .left_hand{width:10%;animation:hand-bounce-left 0.6s infinite;-webkit-animation:hand-bounce-left 0.6s infinite;-moz-animation:hand-bounce-left 0.6s infinite;-o-animation:hand-bounce-left 0.6s infinite;}
 .main_wrap .content .money_wrap .t_money .right_hand{width:10%;animation:hand-bounce-right 0.6s infinite;-webkit-animation:hand-bounce-right 0.6s infinite;-moz-animation:hand-bounce-right 0.6s infinite;-o-animation:hand-bounce-right 0.6s infinite;}
 .main_wrap .content .money_wrap .t_money .text_img{width:35%;animation:money-bounce 0.6s infinite;-webkit-animation:money-bounce 0.6s infinite;-moz-animation:money-bounce 0.6s infinite;-o-animation:money-bounce 0.6s infinite;}
-.main_wrap .content .share_wrap{width:100%;margin:0 auto 16px;background:url('../images/share_bg.png') 0 0/100%;}
+.main_wrap .content .rewards_wrap{padding:20px 0 35px;;text-align:center;}
+.main_wrap .content .rewards_wrap img{width:74vw}
+.main_wrap .content .share_wrap{width:92vw;margin:0 auto 23px;background:url('../images/share_bg.png') 0 0/100%;}
 .main_wrap .content .share_wrap img{width:100%;-moz-animation: blink normal 0.5s infinite ease-in-out;-webkit-animation: blink normal 0.5s infinite ease-in-out;-ms-animation: blink normal 0.5s infinite ease-in-out;animation: blink normal 0.5s infinite ease-in-out;}
 .main_wrap .content .banner_wrap img,
 .main_wrap .content .info_wrap img{width:100%;}
