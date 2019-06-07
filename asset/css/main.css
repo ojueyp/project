@@ -23,7 +23,7 @@ body{min-height:100vh;height:auto;font-size:10px;}
 .main_wrap .content .share_wrap img{width:100%;-moz-animation: blink normal 0.5s infinite ease-in-out;-webkit-animation: blink normal 0.5s infinite ease-in-out;-ms-animation: blink normal 0.5s infinite ease-in-out;animation: blink normal 0.5s infinite ease-in-out;}
 .main_wrap .content .banner_wrap img,
 .main_wrap .content .info_wrap img{width:100%;}
-.main_wrap .coin_bg{position:absolute;top:80px;width:100%;height:100vh;background:url('../images/money_center.png') no-repeat 0 0/100%;box-sizing:border-box;}
+.main_wrap .coin_bg{position:absolute;top:90px;width:100%;height:45vh;background:url('../images/money_center.png') no-repeat 0 0/100%;box-sizing:border-box;}
 
 .event_wrap{position:relative;display:none;height:100vh;}
 .event_wrap.active{display:block;z-index:100;overflow:hidden;}
