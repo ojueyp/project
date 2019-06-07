@@ -56,7 +56,7 @@
 	</div>
 
 	<div class="event_wrap">
-		<button class="close_btn" onclick="goBack()"><i class="close_icon"></i></button>
+		<button id="close_btn" class="close_btn" onclick="goBack()"><i class="close_icon"></i></button>
 		<div class="top">
 			<img src="./asset/images/event_bg1.png" alt="이벤트 계좌로 1원 보내봐!">
 		</div>
@@ -65,14 +65,18 @@
 		</div>
 		<a class="go_link" href="#"><img src="../kakaopay/asset/images/sub_btn.png" /></a>
 	</div>
+
 	<script>
-	$("#event_open").click(function(){
-		$(".event_wrap").addClass('active');
-		$(".event_wrap .top").addClass('slide_down');
-		$(".event_wrap .bottom").addClass('slide_up');
+	$(function(){
+		$("#event_open").click(function(){
+			$(".event_wrap").addClass('active');
+			$(".event_wrap .top").addClass('slide_down');
+			$(".event_wrap .bottom").addClass('slide_up');
+		});
+
+		$("#close_btn").click(function(){
+			$(".event_wrap").removeClass('active');
+		});
 	});
-	function goBack() {
-		window.history.back();
-	}
 	</script>
 </body>
